@@ -15,3 +15,8 @@ class AllTests:
     def TestGetFareEstimateCoordinate(self):
         resp = self.p.getFareEstimateCoordinate(data = {})
         assert resp.statusCode == 200
+
+newTest = AllTests()
+newTest.TestInit()
+newTest.TestGetFareEstimateAddress()
+newTest.TestGetFareEstimateCoordinate()
